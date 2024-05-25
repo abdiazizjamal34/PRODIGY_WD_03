@@ -1,0 +1,89 @@
+body {
+  font: 14px 'Century Gothic', Futura, sans-serif;
+  /* margin: 20px; */
+}
+
+ol, ul {
+  padding-left: 30px;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  background: #000000;
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  /* height: 34px; */
+  /* margin-right: 1px;
+  margin-top: -1px; */
+  padding: 0px;
+  text-align: center;
+  width: 200px;
+  height: 200px;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ed0000;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game-board {
+  margin-left: 80px;
+}
+
+.player-inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  border: 1px solid #999;
+  border-radius: 4px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+.player-inputs div {
+  margin-bottom: 11px;
+  padding: 10px;
+  
+}
+
+.player-inputs label {
+  margin-right: 10px;
+}
+
+.player-inputs input {
+  margin: 1px;
+  padding: 6px;
+  text-align: center;
+  font-size: 26px;
+  border-radius: 2px 40px 2px 50px;
+}
+
+.restart-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
